@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor - Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>JV</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-translate="nav-about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-translate="nav-projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-translate="nav-contact">Contato</a>
+                </li>
+            </ul>
+            <div class="controls-container">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-toggle" class="toggle-input">
+                    <label for="theme-toggle" class="toggle-label">
+                        <div class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- Language Toggle -->
+                <div class="language-toggle">
+                    <input type="checkbox" id="language-toggle" class="toggle-input">
+                    <label for="language-toggle" class="toggle-label language-label">
+                        <div class="toggle-slider">
+                            <span class="toggle-text pt-text">PT</span>
+                            <span class="toggle-text en-text">EN</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-translate="hero-greeting">Olá,</span><br>
+                    <span data-translate="hero-intro">Eu sou</span> <span class="highlight">João Victor</span><br>
+                    <span data-translate="hero-title">Desenvolvedor Full Stack</span>
+                </h1>
+                <p class="hero-description" data-translate="hero-description">
+                    Desenvolvedor apaixonado por criar soluções inovadoras usando Java, Flutter, C# e tecnologias modernas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-translate="hero-btn-projects">Ver Projetos</a>
+                    <a href="https://www.linkedin.com/in/joão-victor-9060581a4/" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="profile.jpg" alt="João Victor" class="profile-img">
+                    <div class="image-bg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about-text-1">
+                        Sou um desenvolvedor full stack com experiência em diversas tecnologias e linguagens de programação. 
+                        Tenho paixão por criar aplicações robustas e escaláveis, sempre buscando as melhores práticas de desenvolvimento.
+                    </p>
+                    <p data-translate="about-text-2">
+                        Minha jornada inclui projetos em Java com Spring Boot, desenvolvimento mobile com Flutter, 
+                        aplicações web modernas e APIs RESTful. Estou sempre em busca de novos desafios e oportunidades 
+                        para crescer profissionalmente.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="6">0</span>
+                            <span class="stat-label" data-translate="stat-projects">Projetos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label" data-translate="stat-languages">Linguagens</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label" data-translate="stat-experience">Anos de Experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills-title">Minhas Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p data-translate="skill-java">Spring Boot, APIs REST, Microserviços</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Flutter</h3>
+                    <p data-translate="skill-flutter">Desenvolvimento mobile multiplataforma</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>C#</h3>
+                    <p data-translate="skill-csharp">.NET, APIs, Aplicações desktop</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 data-translate="skill-database-title">Banco de Dados</h3>
+                    <p data-translate="skill-database">MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p data-translate="skill-git">Controle de versão e colaboração</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud</h3>
+                    <p data-translate="skill-cloud">Deploy e infraestrutura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects-title">Meus Projetos</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all" data-translate="filter-all">Todos</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
+                <button class="filter-btn" data-filter="csharp">C#</button>
+            </div>
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects will be loaded dynamically -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p data-translate="loading-projects">Carregando projetos...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact-subtitle">Vamos trabalhar juntos!</h3>
+                    <p data-translate="contact-description">Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo!</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/dev-oliveira-jv" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joão-victor-9060581a4/" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:joao.victor@email.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-translate="footer-copyright">&copy; 2025 João Victor. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
